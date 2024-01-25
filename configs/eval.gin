@@ -2,14 +2,14 @@
 MMTM_MVCNN.pretraining=False
 MMTM_MVCNN.num_views=2
 MMTM_MVCNN.mmtm_off=True
-MMTM_MVCNN.mmtm_rescale_eval_file_path='/gpfs/data/geraslab/Nan/public_repo/greedymml/saves/guided/eval_history_batch'
-MMTM_MVCNN.mmtm_rescale_training_file_path='/gpfs/data/geraslab/Nan/public_repo/greedymml/saves/guided'
+MMTM_MVCNN.mmtm_rescale_eval_file_path='./saves/eval_history_batch'
+MMTM_MVCNN.mmtm_rescale_training_file_path='./saves'
 MMTM_MVCNN.device='cuda:0'
 
 # Train configuration
 eval_.target_data_split='test'
 eval_.batch_size=8
-eval_.pretrained_weights_path='/gpfs/data/geraslab/Nan/public_repo/greedymml/saves/guided/model_best_val.pt'
+eval_.pretrained_weights_path='./saves/model_best_val.pt'
 ProgressionCallback.other_metrics=[]
 
 # Training loop

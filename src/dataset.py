@@ -84,7 +84,7 @@ class MultiviewModelDataset(torch.utils.data.Dataset):
         path = self.filepaths[idx]
         class_name = path.split('/')[-3]
         class_id = self.classnames.index(class_name)
-        imgs = torch.load(path+'.obj.npy')
+        imgs = torch.load(path[:-7] + '001.npy')
         trans_imgs = []
         for img, view in zip(imgs[self.specific_view], self.specific_view):
             if self.transform:

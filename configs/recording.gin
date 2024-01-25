@@ -6,7 +6,7 @@ MMTM_MVCNN.saving_mmtm_squeeze_array=True
 # Train configuration
 eval_.target_data_split='train'
 eval_.batch_size=8
-eval_.pretrained_weights_path='/gpfs/data/geraslab/Nan/public_repo/greedymml/saves/guided/model_best_val.pt'
+eval_.pretrained_weights_path='./saves/model_best_val.pt'
 ProgressionCallback.other_metrics=[]
 
 # Training loop

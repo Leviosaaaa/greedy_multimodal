@@ -11,16 +11,16 @@ We provide the source code for the **balanced multi-modal learning algorithm** p
 
 We take the 3D object classification task using the [ModelNet40 dataset](http://maxwell.cs.umass.edu/mvcnn-data/) as an example. One can train the multi-modal DNN via the *balanced multi-modal learning algorithm* :
 
-* `python3 train.py $RESULTS_DIR/random configs/training_guided.gin`
+* `python3 train.py saves configs/training_guided.gin`
 
 or its *random* version:
 
-* `python3 train.py $RESULTS_DIR/random configs/training_random.gin`
+* `python3 train.py saves configs/training_random.gin`
 
 To analysis multi-modal DNNs' *conditional utilization rate*, run the following two scripts consecutively:
 
-* `python3 eval.py $RESULTS_DIR/random configs/recording.gin`
-* `python3 eval.py $RESULTS_DIR/random configs/eval.gin`
+* `python3 eval.py saves configs/recording.gin`
+* `python3 eval.py saves configs/random configs/eval.gin`
 
 ## Citation
 Please cite this work if you find the analysis or the proposed method useful for your research.

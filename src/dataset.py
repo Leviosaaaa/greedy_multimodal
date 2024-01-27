@@ -97,15 +97,15 @@ class MultiviewModelDataset(torch.utils.data.Dataset):
 @gin.configurable 
 def get_mvdcndata(
         ending = '/*.png',
-        root_dir = os.environ['DATA_DIR'], 
+        root_dir = './data/modelnet40v1png', 
         make_npy_files = False,
         valid_size=0.2,
         batch_size=8,
-        random_seed_for_validation = 10,
+        random_seed_for_validation=0,
         num_views=12,
         num_workers=0,
         specific_views=None,
-        seed=777,
+        seed=2024,
         use_cuda=True,
         ):
     random.seed(seed)
